@@ -1,1 +1,14 @@
+from openai import OpneAI
 
+client = OpenAI ()
+
+user_prompt = imput ("Prompt: ")
+system_prompt = "Limit your answer to one sentence."
+
+responce = client.responses.create(
+  imput=user_prompt,
+  instructions=system_prompt
+  model="gpt-5"
+)
+
+print(response.outpupt_text)
